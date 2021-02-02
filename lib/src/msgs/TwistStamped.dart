@@ -1,13 +1,14 @@
 // Auto-generated. Do not edit!
 
-// Updated: Tue Nov 10 15:45:56 2020
+// Updated: Mon Feb  1 12:03:00 2021
 
 // (in-package geometry_msgs.msg)
 
 
+// ignore_for_file: unused_import, overridden_fields
 import 'dart:convert';
 import 'package:buffer/buffer.dart';
-import 'package:dartros/msg_utils.dart';
+import 'package:dartros_msgutils/msg_utils.dart';
 import 'package:std_msgs/msgs.dart';
 import 'Twist.dart';
 
@@ -20,15 +21,16 @@ class TwistStamped extends RosMessage<TwistStamped> {
 
   static TwistStamped $prototype = TwistStamped();
   TwistStamped({ 
-    Header header,
-    Twist twist,
+    Header? header,
+    Twist? twist,
   }):
   this.header = header ?? Header(),
   this.twist = twist ?? Twist();
 
+  @override
   TwistStamped call({ 
-    Header header,
-    Twist twist,
+    Header? header,
+    Twist? twist,
   }) => TwistStamped(
   header: header,
   twist: twist,

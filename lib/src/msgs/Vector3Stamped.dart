@@ -1,13 +1,14 @@
 // Auto-generated. Do not edit!
 
-// Updated: Tue Nov 10 15:45:56 2020
+// Updated: Mon Feb  1 12:03:00 2021
 
 // (in-package geometry_msgs.msg)
 
 
+// ignore_for_file: unused_import, overridden_fields
 import 'dart:convert';
 import 'package:buffer/buffer.dart';
-import 'package:dartros/msg_utils.dart';
+import 'package:dartros_msgutils/msg_utils.dart';
 import 'package:std_msgs/msgs.dart';
 import 'Vector3.dart';
 
@@ -20,15 +21,16 @@ class Vector3Stamped extends RosMessage<Vector3Stamped> {
 
   static Vector3Stamped $prototype = Vector3Stamped();
   Vector3Stamped({ 
-    Header header,
-    Vector3 vector,
+    Header? header,
+    Vector3? vector,
   }):
   this.header = header ?? Header(),
   this.vector = vector ?? Vector3();
 
+  @override
   Vector3Stamped call({ 
-    Header header,
-    Vector3 vector,
+    Header? header,
+    Vector3? vector,
   }) => Vector3Stamped(
   header: header,
   vector: vector,

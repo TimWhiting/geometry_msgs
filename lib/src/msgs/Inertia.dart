@@ -1,13 +1,14 @@
 // Auto-generated. Do not edit!
 
-// Updated: Tue Nov 10 15:45:56 2020
+// Updated: Mon Feb  1 12:03:01 2021
 
 // (in-package geometry_msgs.msg)
 
 
+// ignore_for_file: unused_import, overridden_fields
 import 'dart:convert';
 import 'package:buffer/buffer.dart';
-import 'package:dartros/msg_utils.dart';
+import 'package:dartros_msgutils/msg_utils.dart';
 import 'Vector3.dart';
 
 //-----------------------------------------------------------
@@ -31,14 +32,14 @@ class Inertia extends RosMessage<Inertia> {
 
   static Inertia $prototype = Inertia();
   Inertia({ 
-    double m,
-    Vector3 com,
-    double ixx,
-    double ixy,
-    double ixz,
-    double iyy,
-    double iyz,
-    double izz,
+    double? m,
+    Vector3? com,
+    double? ixx,
+    double? ixy,
+    double? ixz,
+    double? iyy,
+    double? iyz,
+    double? izz,
   }):
   this.m = m ?? 0.0,
   this.com = com ?? Vector3(),
@@ -49,15 +50,16 @@ class Inertia extends RosMessage<Inertia> {
   this.iyz = iyz ?? 0.0,
   this.izz = izz ?? 0.0;
 
+  @override
   Inertia call({ 
-    double m,
-    Vector3 com,
-    double ixx,
-    double ixy,
-    double ixz,
-    double iyy,
-    double iyz,
-    double izz,
+    double? m,
+    Vector3? com,
+    double? ixx,
+    double? ixy,
+    double? ixz,
+    double? iyy,
+    double? iyz,
+    double? izz,
   }) => Inertia(
   m: m,
   com: com,

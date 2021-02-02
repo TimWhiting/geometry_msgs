@@ -1,13 +1,14 @@
 // Auto-generated. Do not edit!
 
-// Updated: Tue Nov 10 15:45:56 2020
+// Updated: Mon Feb  1 12:03:01 2021
 
 // (in-package geometry_msgs.msg)
 
 
+// ignore_for_file: unused_import, overridden_fields
 import 'dart:convert';
 import 'package:buffer/buffer.dart';
-import 'package:dartros/msg_utils.dart';
+import 'package:dartros_msgutils/msg_utils.dart';
 
 //-----------------------------------------------------------
 
@@ -20,18 +21,19 @@ class Point32 extends RosMessage<Point32> {
 
   static Point32 $prototype = Point32();
   Point32({ 
-    double x,
-    double y,
-    double z,
+    double? x,
+    double? y,
+    double? z,
   }):
   this.x = x ?? 0.0,
   this.y = y ?? 0.0,
   this.z = z ?? 0.0;
 
+  @override
   Point32 call({ 
-    double x,
-    double y,
-    double z,
+    double? x,
+    double? y,
+    double? z,
   }) => Point32(
   x: x,
   y: y,

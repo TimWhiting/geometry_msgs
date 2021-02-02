@@ -1,13 +1,14 @@
 // Auto-generated. Do not edit!
 
-// Updated: Tue Nov 10 15:45:56 2020
+// Updated: Mon Feb  1 12:03:01 2021
 
 // (in-package geometry_msgs.msg)
 
 
+// ignore_for_file: unused_import, overridden_fields
 import 'dart:convert';
 import 'package:buffer/buffer.dart';
-import 'package:dartros/msg_utils.dart';
+import 'package:dartros_msgutils/msg_utils.dart';
 import 'package:std_msgs/msgs.dart';
 import 'Accel.dart';
 
@@ -20,15 +21,16 @@ class AccelStamped extends RosMessage<AccelStamped> {
 
   static AccelStamped $prototype = AccelStamped();
   AccelStamped({ 
-    Header header,
-    Accel accel,
+    Header? header,
+    Accel? accel,
   }):
   this.header = header ?? Header(),
   this.accel = accel ?? Accel();
 
+  @override
   AccelStamped call({ 
-    Header header,
-    Accel accel,
+    Header? header,
+    Accel? accel,
   }) => AccelStamped(
   header: header,
   accel: accel,

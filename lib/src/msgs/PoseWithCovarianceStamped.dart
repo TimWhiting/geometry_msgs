@@ -1,13 +1,14 @@
 // Auto-generated. Do not edit!
 
-// Updated: Tue Nov 10 15:45:56 2020
+// Updated: Mon Feb  1 12:03:01 2021
 
 // (in-package geometry_msgs.msg)
 
 
+// ignore_for_file: unused_import, overridden_fields
 import 'dart:convert';
 import 'package:buffer/buffer.dart';
-import 'package:dartros/msg_utils.dart';
+import 'package:dartros_msgutils/msg_utils.dart';
 import 'package:std_msgs/msgs.dart';
 import 'PoseWithCovariance.dart';
 
@@ -20,15 +21,16 @@ class PoseWithCovarianceStamped extends RosMessage<PoseWithCovarianceStamped> {
 
   static PoseWithCovarianceStamped $prototype = PoseWithCovarianceStamped();
   PoseWithCovarianceStamped({ 
-    Header header,
-    PoseWithCovariance pose,
+    Header? header,
+    PoseWithCovariance? pose,
   }):
   this.header = header ?? Header(),
   this.pose = pose ?? PoseWithCovariance();
 
+  @override
   PoseWithCovarianceStamped call({ 
-    Header header,
-    PoseWithCovariance pose,
+    Header? header,
+    PoseWithCovariance? pose,
   }) => PoseWithCovarianceStamped(
   header: header,
   pose: pose,
